@@ -18,8 +18,9 @@ def main():
 	measured_n =[]
 	times_cpp = []
 	times_py =	[]
+	n1=30
 	n=46
-	for i in range(f,n):
+	for i in range(n1,n):
 		start_p = pc()
 		fibo_py = i.fib_py()
 		end_p =pc()
