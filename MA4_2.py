@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 from integer import Integer
 from time import perf_counter as pc
 
-def fib_py(self):
-	if self <= 1:
-		return self
+def fib_py(i):
+	if i <= 1:
+		return i
 	else:
-		return(fib_py(self-1) + fib_py(self-2))
+		return(fib_py(i-1) + fib_py(i-2))
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
 	n=46
 	for i in range(n1,n):
 		start_p = pc()
-		fibo_py = i.fib_py()
+		fibo_py = fib_py(i)
 		end_p =pc()
 		t_p =round(end_p-start_p,4)
 		times_py.append(t_p)
