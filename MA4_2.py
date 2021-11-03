@@ -30,7 +30,7 @@ def main():
 
 		start_cpp = pc()
 		f.set(i)
-		fibo_cpp = i.fib()
+		fibo_cpp = f.fib()
 		end_cpp =pc()
 		t_cpp=round(end_cpp-start_cpp,4)
 		times_cpp.append(t_cpp)
