@@ -20,7 +20,7 @@ class Integer(object):
 	def set(self, val):
 		lib.Integer_set(self.obj, val)
     
-	def fib_fib_cpp(self):
+	def fib_cpp(self):
 		return lib.Integer_fib(self.obj)
 
 	def __del__(self):
