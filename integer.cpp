@@ -7,7 +7,7 @@ class Integer{
 		int get();
 		void set(int);
 		int fib();
-		int _fib(int)
+		int _fib(int);
 	private:
 		int val;
 	};
