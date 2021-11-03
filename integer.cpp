@@ -7,7 +7,7 @@ class Integer{
 		int get();
 		void set(int);
 		int fib();
-		int _fib(int);
+		int _fib(int)
 	private:
 		int val;
 	};
@@ -32,7 +32,7 @@ int Integer::_fib(int x){
 	if ((x==0) || (x==1)){
 		return x;}
 	else{
-		return _fib(n-1) + _fib(n-2);}
+		return _fib(x-1) + _fib(x-2);}
 	}
 
 
