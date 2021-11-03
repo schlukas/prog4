@@ -22,11 +22,23 @@ void Integer::set(int n){
 	val = n;
 	}
 
+int	Integer::fib(){
+	return _fib(val);
+	}
+
+int Integer::_fib(int x){
+	if ((x==0) || (x==1)){
+		return x;}
+	else{
+		return _fib(n-1) + _fib(n-2);}
+	}
+
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
 	int Integer_get(Integer* integer) {return integer->get();}
 	void Integer_set(Integer* integer, int n) {integer->set(n);}
+	int Integer_fib(Integer* integer, int n) {return integer->fib(n);}
 	void Integer_delete(Integer* integer){
 		if (integer){
 			delete integer;
