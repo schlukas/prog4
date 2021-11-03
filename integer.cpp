@@ -1,6 +1,6 @@
 #include <cstdlib>
 // Integer class 
-
+//Kieran checked on the 03.11.21
 class Integer{
 	public:
 		Integer(int);
