@@ -19,7 +19,7 @@ def main():
 	times_cpp = []
 	times_py =	[]
 	n1=30
-	n=46
+	n=38
 	for i in range(n1,n):
 		start_p = pc()
 		fibo_py = fib_py(i)
