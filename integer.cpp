@@ -6,6 +6,8 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
+		int fib();
+		int _fib(int)
 	private:
 		int val;
 	};
